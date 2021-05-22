@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>akairos </title>
+  <title>akairos | Impermeabilización</title>
+  <link rel="shortcut icon" href="img/logo.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./nosotros.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,25 +15,50 @@
 </head>
 
 <body>
+  <!-------------------------------- Messenger plugin de chat Code --------------------------------->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v10.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your plugin de chat code -->
+  <div class="fb-customerchat"
+    attribution="biz_inbox"
+    page_id="101802261595946">
+  </div>
     <!------------------------------------------whatsAPP--------------------------------------->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <a href="https://api.whatsapp.com/send?phone=+573507318986&text=Bienvenidos%20AKAIROS" class="float animate__animated animate__bounce animate__slower animate__infinite" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
-  
+
   <!------------------------------------------precargado--------------------------------------->
   <div class="div" id="contenedor_carga">
-    <img src="img/logo.png" id="carga"></div>
+    <img src="img/logo.png" id="carga" alt="akairos impermeabilizaciones"></div>
+    
   </div>
   <!------------------------------------------Header--------------------------------------->
   <nav>
     <div class="logo">
-      <a href="#"><img src="img/logo.png" alt="">
+      <a href="#"><img src="img/logo.png" alt="Akairos-sas-Impermeabilizaciones-y-Mantenimientos-Locativos">
       <h4>Akairos</h4></a>
     </div>
     <ul class="nav-links">
-      <li><a href="#">Home </a></li>
+      <li><a href="#">Inicio</a></li>
       <li><a href="#info">Servicios </a></li>
       <li><a href="#proyectos">proyectos </a></li>
       <li><a href="#contactenos"> Contactenos</a></li>
@@ -47,196 +74,155 @@
     <section class="banner">
       <div class="banner-contect">
         <h1>Bienvenidos Akairos S.A.S</h1>
-        <a href="file:///C:/Users/MICHAE~1/AppData/Local/Temp/BROCHURE-Akairos-SAS-ACTUALIZADO.html">BROCHURE</a>
+        <h2>"Todos nuestros servicios a tu alcanze"</h2>
+        <a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:60d5417f-a977-40e4-b3f2-40788f6c90a4">BROCHURE AKAIROS</a>
       </div>
     </section>
-    <!---------------------------------Welcome------------------------------------------------>
-    <!--<div class="container-images">
-      <div class="container-image">
-        <img src="img/welcome1.jpg" alt="">
-        <h2>
-          Titulo
-        </h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe recusandae veniam reprehenderit quod dolorem
-          molestias ipsam numquam. Laudantium, ea quae. Saepe amet maxime explicabo exercitationem quos nulla mollitia
-          impedit error.
-        </p>
-      </div>
-      <div class="container-image">
-        <img src="img/welcome2.jpg" alt="">
-        <h2>
-          Titulo
-        </h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe recusandae veniam reprehenderit quod dolorem
-          molestias ipsam numquam. Laudantium, ea quae. Saepe amet maxime explicabo exercitationem quos nulla mollitia
-          impedit error.
-        </p>
-      </div>
-      <div class="container-image">
-        <img src="img/welcome3.jpg" alt="">
-        <h2>
-          Titulo
-        </h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe recusandae veniam reprehenderit quod dolorem
-          molestias ipsam numquam. Laudantium, ea quae. Saepe amet maxime explicabo exercitationem quos nulla mollitia
-          impedit error.
-        </p>
-      </div>
-    </div>-->
-     <!--------------------------------- Servicios------------------------------------------------>
-    <!--<div class="title_service" id="servicios">
-      <h2>SERVICIOS</h2>
-    </div>
-    <div class="servicios">
-      <div class="item1 animado ">
-        <img src="img/servicio1.jpg" alt="noticas fachadas">
-        <h3>Impermeabilización</h3>
-        <p>Realizamos impermeabilizaciones de cubiertas, fachadas, tanques de agua, jardineras y fosos de asensor.</p>
-        <a href="">Lear More<li class="fas" onclick="servicios1()"></li></a>
-      </div>
-      <div class="item2 animado">
-        <img src="img/servicio2.jpg" alt="noticas fachadas">
-        <h3>Obras</h3>
-        <p>Construccion de obras civiles, mantenimientos locativos, adecuacion de resintos y pintura general.</p>
-        <a href="">Lear More<li class="fas"></li></a>
-      </div>
-      <div class="item3 animado">
-        <img src="img/servicio3.jpg" alt="noticas fachadas">
-        <h3>Redes</h3>
-        <p>Se realizan mantenimientos de redes hidraulicas, de gas y electricas.</p>
-        <a href="">Lear More<li class="fas"></li></a>
-      </div>
-      <div class="item4 animado">
-        <img src="img/servicio4.jpg" alt="noticas fachadas">
-        <h3>Pisos Industriales</h3>
-        <p>Mantenimiento y aplicacion de pisos epoxicos y poliuretanos.</p>
-        <a href="">Lear More<li class="fas"></li></a>
-      </div>
-      
-      <div class="item6 animado">
-        <img src="img/noticia3.jpg" alt="noticas fachadas">
-        <h3>Ornamentación</h3>
-        <p>Dentro de lo trabajos de ornamentacion tenemos:
-          Portones, Ventanas, Rejas, Barandas, Pasamanos,
-          Ductos, Canales, Bajantes, Cercas, Cerramientos.
-          Estructuras metálicas en general, Montajes.
-          Mantenimiento, Restauración, Pintura y Soldadura.
-          Trabajos especiales, asesoría y diseño.
-          Proyectos electro mecánicos, sistemas de control.
-          Mantenimiento, Restauración, Pintura y Soldadura.</p>
-        <a href="">Lear More<li class="fas"></li></a>
-      </div>
-      <div class="item7 animado">
-        <img src="img/noticia1.jpg" alt="noticas fachadas">
-        <h3>Lorem ips</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti fugit distinctio eligendi est eveniet
-          labore libero delectus? Quos, dolore inventore. Quo dignissimos aut repellendus quod, consequuntur possimus
-          ipsa inventore nesciunt.</p>
-        <a href="">Lear More<li class="fas"></li></a>
-      </div>
-      <div class="item8 animado">
-        <img src="img/noticia2.jpg" alt="noticas fachadas">
-        <h3>Lorem ips</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti fugit distinctio eligendi est eveniet
-          labore libero delectus? Quos, dolore inventore. Quo dignissimos aut repellendus quod, consequuntur possimus
-          ipsa inventore nesciunt.</p>
-        <a href="">Lear More<li class="fas"></li></a>
-      </div>-->
-    </div>
-  </section>
+    
   <!--------------------------------- Servicios------------------------------------------------>
   <section class="info_servicios" id="info">
     <h2>servicios</h2>
       <div class="contenedor">
         <div class="info animado">
-          <img src="img/impermeabilizacion.png"></br></br>
+          <img src="img/impermeabilizacion.png" alt="Impermeabilización"></br></br>
           <h3>Impermeabilización</h3>
           <p>Realizamos impermeabilizaciones de cubiertas, fachadas, tanques de agua, jardineras y fosos de asensor.</p>
-          <a href="">Ver Mas</a>
+          <a href="impermeabilizacion.html">Ver Más</a>
         </div>
         <div class="info animado">
-          <img src="img/obras.png" /></br></br>
+          <img src="img/obras.png" alt="Impermeabilización" /></br></br>
           <h3>Obras</h3>
-          <p>Construccion de obras civiles, mantenimientos locativos, adecuacion de resintos y pintura general.</p>
-          <a href="">Ver Mas</a>
+          <p> Construcción  de obras civiles, mantenimientos locativos, adecuacion de resintos y pintura general.</p>
+          <a href="">Ver Más</a>
         </div>
         <div class="info animado">
-          <img src="img/pisos.png" /></br></br>
+          <img src="img/pisos.png"alt="Impermeabilización" /></br></br>
           <h3>Pisos Industriales</h3>
-          <p>Mantenimiento y aplicacion de pisos epoxicos y poliuretanos. </p>
-          <a href="">Ver Mas</a>
+          <p>Mantenimiento y aplicación de pisos epoxicos y poliuretanos. </p>
+          <a href="">Ver Más</a>
         </div>
         <div class="info animado">
-          <img src="img/ornamentazion.png" /></br></br>
+          <img src="img/ornamentazion.png" alt="ornamentacion" /></br></br>
           <h3>Ornamentación</h3>
-          <p>Dentro de lo trabajos de ornamentacion tenemos:
+          <p>Dentro de los trabajos de ornamentación tenemos:
             Portones, Ventanas, Rejas, Barandas, Pasamanos,
             Ductos, Canales, Bajantes, Cercas, Cerramientos ETC.
            </p>
-           <a href="">Ver Mas</a> 
+           <a href="">Ver Más</a> 
         </div>
       </div>
-  </section>
+  </section><br><br><br><br><br><br>
   
-    <!---------------------------------Nosotros------------------------------------------------
-    </section>
-    <section class="info" id="info">
-      <h2>NUESTRO EQUIPO</h>
-        <div class="contenedor">
-          <div class="info animado">
-            <img src="img/foto1.JPG"></br></br>
-            <h3>Directivos</h3>
-            <p>Tiene la formacion para gestionar, planificar diseñar proyectos de ingenieria, que sean sostenibles en el
-              tiempo, y tiene las competencias necesarias para desempeñarse en la contruccion,transportes,hidraulica.
-            </p>
-          </div>
-          <div class="info animado">
-            <img src="img/foto2.jpeg" /></br></br>
-            <h3>Administrativos</h3>
-            <p>Persona entregada de Diseñar, ejecutar y mejorar los sistemas de gestión en seguridad y salud en el
-              trabajo SG-SST.y mejorar condiciones de convivencia para nuestro trabajadores.</p>
-          </div>
-          <div class="info animado">
-            <img src="img/foto4.JPG" /></br></br>
-            <h3>Dr. de Proyectos</h3>
-            <p>Esta capacitado para crear diseños arquitectonicos y diseñar espacios urbanos en contextos, con
-              necesidades especificas </p>
-          </div>
-        </div>
-    </section>-->
+    <!---------------------------------Nosotros------------------------------------------------>
+    <div class="slider--teams">
+      <h2 style="text-align: center;font-size: 30px;">Nosotros</h2><br>
+      <div class="slider--teams__team">
+        
+        <ul id="list" class="cf">
+          <li>
+            <figure class="active">
+              <div>
+                <div></div>
+              </div>
+              <figcaption>
+                <h2>Alex Florian</h2>
+                <p>Director de Proyectos</p>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <div>
+                <div></div>
+              </div>
+              <figcaption>
+                <h2>Andres Rivera</h2>
+                <p>Gerente</p>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <div>
+                <div></div>
+              </div>
+              <figcaption>
+                <h2>Rocio Olaya</h2>
+                <p>Contador</p>
+              </figcaption>
+            </figure>
+          </li> 
+          <li>
+            <figure>
+              <div>
+                <div></div>
+              </div>
+              <figcaption>
+                <h2>Michael Rivera</h2>
+                <p>Community Manager</p>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <div>
+                <div></div> 
+              </div>
+              <figcaption>
+                <h2>Daniela Jimenez</h2>
+                <p>Auxiliar Administrativa</p>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <div>
+                <div></div> 
+              </div>
+              <figcaption>
+                <h2>SGSST</h2>
+                <p>Sistema Gestión</p>
+              </figcaption>
+            </figure>
+          </li> 
+        </ul>
+      </div>
+    </div><br><br>
     <!---------------------------------proyectos------------------------------------------------>
     <div class="slideshow-container" id=proyectos>
       <h2>Proyectos</h2>
       <div class="mySlides fade">
-        <img src="img/proyectos/Imagen1.png" style="width:100%">
-        <div class="text">Impermeabilizacion fachadas, para la inglesia cristiana reflexiones biblicas</div>
+        <img src="img/proyectos/Imagen1.png" style="width:100%" alt="Impermeabilización">
+        <div class="text">Impermeabilización fachadas, para la inglesia cristiana reflexiones bíblicas</div>
       </div>
       <div class="mySlides fade">
-        <img src="img/proyectos/Imagen2.png" style="width:100%">
-        <div class="text">Mantenimiento hidraulico Conjunto Mirandela 9</div>
+        <img src="img/proyectos/Imagen2.png" alt="Impermeabilización" style="width:100%">
+        <div class="text">Mantenimiento 
+          Hidráulico Conjunto Mirandela 9</div>
       </div>
       <div class="mySlides fade">
-        <img src="img/proyectos/Imagen3.png" style="width:100%">
-        <div class="text">Cambio de teja termoacustica bodega ZONA INDUSTRIAL</div>
+        <img src="img/proyectos/Imagen3.png" alt="Impermeabilización" style="width:100%">
+        <div class="text">Cambio de teja termoacústica bodega ZONA INDUSTRIAL</div>
       </div>
       <div class="mySlides fade">
-        <img src="img/proyectos/Imagen5.png" style="width:100%">
-        <div class="text">impermeabilizacion de cubierta y tanque con membrana PVC CLUB LA CALERA</div>
+        <img src="img/proyectos/Imagen5.png" alt="Impermeabilización" style="width:100%">
+        <div class="text">impermeabilización de cubierta y tanque con membrana PVC CLUB LA CALERA</div>
       </div>
       <div class="mySlides fade">
-        <img src="img/proyectos/Imagen6.png" style="width:100%">
-        <div class="text">Instalacion de puerta del parqueadero y automatizacion. Conjunto Residencial  ALICANTE DE SUBA  </div>
+        <img src="img/proyectos/Imagen6.png" alt="Impermeabilización" style="width:100%">
+        <div class="text">Instalación de puerta del parqueadero y automatización. Conjunto Residencial  ALICANTE DE SUBA  </div>
       </div>
       <div class="mySlides fade">
-        <img src="img/proyectos/Imagen7.png" style="width:100%">
-        <div class="text">Impermeabilizacion de placas</div>
+        <img src="img/proyectos/Imagen7.png" alt="Impermeabilización" style="width:100%">
+        <div class="text">Impermeabilización de placas</div>
       </div>
       <div class="mySlides fade">
-        <img src="img/proyectos/IMG-20200125-WA0013.jpg" style="width:100%">
-        <div class="text">Instalacion de domo en policarbonato, para el edificio normandia</div>
+        <img src="img/proyectos/IMG-20200125-WA0013.jpg" alt="Impermeabilización" style="width:100%">
+        <div class="text">Instalación de domo en policarbonato, para el edificio normandia</div>
       </div>
      
 
@@ -263,88 +249,96 @@
      <div class="slider">
       <div class="slide-track">
         <div class="slide">
-          <img src="img/pintuco.jpg" height="100" width="250" alt="" />
+          <img src="img/pintuco.jpg" height="100" width="250" alt="pintuco" />
         </div>
         <div class="slide">
-          <img src="img/corona.jpg" height="100" width="250" alt="" />
+          <img src="img/corona.jpg" height="100" width="250" alt="corona" />
         </div>
         <div class="slide">
-          <img src="img/sika.png" height="100" width="250" alt="" />
+          <img src="img/sika.png" height="100" width="250" alt="sika" />
         </div>
         <div class="slide">
-          <img src="img/danosa.png" height="100" width="250" alt="" />
+          <img src="img/danosa.png" height="100" width="250" alt="danosa" />
         </div>
         <div class="slide">
-          <img src="img/basf.jpg" height="100" width="250" alt="" />
+          <img src="img/basf.jpg" height="100" width="250" alt="basf" />
         </div>
         <div class="slide">
-          <img src="img/fiberglass.png" height="100" width="250" alt="" />
+          <img src="img/fiberglass.png" height="100" width="250" alt="fiberglass" />
         </div>
         <div class="slide">
-          <img src="img/toxement.png" height="100" width="250" alt="" />
+          <img src="img/toxement.png" height="100" width="250" alt="toxement" />
         </div>
         <div class="slide">
-          <img src="img/pintuco.jpg" height="100" width="250" alt="" />
+          <img src="img/pintuco.jpg" height="100" width="250" alt="pintuco" />
         </div>
         <div class="slide">
-          <img src="img/corona.jpg" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="img/sika.png" height="100" width="250" alt="" />
+          <img src="img/texsa.png" height="100" width="250" alt="corona" />
         </div>
       </div>
     </div>
-    <br>
+    <br> <br>
     
   <!---------------------------------contactenos------------------------------------------------>
   <section class="todo-contendio" id="contactenos">
     <div class="contact-form">
-      <h3>Contactenos <span></span></h3>
+      <h3>Contáctenos <span></span></h3>
       <form action="">
         <p>
-          <input placeholder="Nombre" type="text" name="fullname">
+          <input placeholder="nombre" type="text" name="nombre">
         </p>
         <p>
           <input placeholder="Apellido" type="email" name="email">
         </p>
         <p>
-          <input placeholder="Correo" type="tel" name="phone">
+          <input placeholder="correo" type="text" name="correo">
         </p>
         <p>
-          <input placeholder="Telefono" type="text" name="affair">
+          <input placeholder="telefono" type="tel" name="telefono">
         </p>
         <p class="block">
-          <textarea style="resize: none;" placeholder="Mensaje" name="message" rows="5"></textarea>
+          <textarea style="resize: none;" placeholder="Mensaje" name="mensaje" rows="5"></textarea>
         </p>
         <p class="block">
-          <button>
+          <button type="submit" value="Enviar">
             Enviar
           </button>
         </p>
       </form>
     </div>
-    <!--<div class="iframe">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m8!1m3!1d63628.273605244394!2d-74.1708245!3d4.6355907!3m2!1i1024!2i768!4f13.1!4m7!3e6!4m3!3m2!1d4.6303361!2d-74.1376942!4m1!2scll35c%20%2373b-10!5e0!3m2!1sen!2sco!4v1611844254594!5m2!1sen!2sco"
-        width="500" height="420" frameborder="0" style="border:0;" allowfullscreen="" tabindex="0"></iframe>
-    </div>-->
+    <div class="fb-comments" data-href="https://www.facebook.com/Akairos-sas-Impermeabilizaciones-y-Mantenimientos-Locativos-101802261595946/" data-width="" data-numposts="5"></div>
   </section>
 </main>
   <!---------------------------------footer------------------------------------------------>
-
   <footer>
     <div class="contenido">
       <div class="column--informacion">
         <h2>¿Por qué elegirnos?</h2>
         <p>Contamos con amplio conocimiento y experiencia en el sector de la construcción y mantenimientos locativos y/o
           industrial, en edificaciones tales como, bodegas industriales, conjuntos residenciales, edificios en general,
-          restauración, reformas, adecuaciones y remodelaciones de recintos. </p>
+          restauración, reformas, adecuaciones y remodelaciones de recintos. </p><br>
+          <h2>Mision</h2>
+          <p>Brindar a nuestros clientes una completa asesoría para la ejecución de sus proyectos de arquitectura o ingeniería. Buscamos satisfacer las necesidades de nuestros clientes antes, durante y después de finalizados los proyectos, proporcionándoles servicios con calidad que superan sus expectativas, usando la mejor tecnología, materiales de primera calidad, y un personal altamente calificado. </p>
+      </div>
+      <div class="column--info2">
+        <h2>Servicos</h2>
+        <p><a class="enlace" href="">Impermeabilizaciòn</a></p>
+        <p><a class="enlace" href="">Obras</a></p>
+        <p><a class="enlace" href="">Pisos Industriales</a></p>
+        <p><a class="enlace" href="">Ornamentación</a></p><br>
+        <h2>Proveedores</h2>
+        <p><a class="enlace" href="">Sika</a></p>
+        <p><a class="enlace" href="">Danosa</a></p>
+        <p><a class="enlace" href="">Pintuco</a></p>
+        <p><a class="enlace" href="">Corona</a></p>
+        <p><a class="enlace" href="">BASF</a></p>
+        <p><a class="enlace" href="">FiberGlass</a></p>
       </div>
       <div class="column--contactos">
         <h2>Información de Contacto</h2>
         <div class="row2">
           <img src="icons/maps.svg" alt="">
-          <p><a style="color: white;" href="https://goo.gl/maps/mEEHaSj4JPs1LZC48">CLl35c sur# 73 b 10, Bogotá, Cundinamarca, Colombia</p></a>
+          <p><a style="color: white;" href="https://goo.gl/maps/mEEHaSj4JPs1LZC48">CLl 35c sur #73 b 10, Bogotá D.C, Colombia</p></a>
         </div>
         <div class="row2">
           <img src="icons/email.svg" alt="">
@@ -353,13 +347,12 @@
         <div class="row2">
           <img src="icons/call.svg" alt="">
           <p><a style="color: white;" href="tel:350-731-8986">(+57) 350 731-8986 | 320 611-8329 </a></p>
-        </div>
+        </div><br><br>
       </div>
     </div>
-    
     <div class="redes">
       <div class="derechos">
-      <h5>© 2020 akairos S.A.S | Todos los derechos reservados. | Diseño y desarrollo</h5>
+      <h5>© 2020 akairos S.A.S | Todos los derechos reservados. | Diseño y Desarrollo</h5>
      </div>
      <div class="column--redes">
       <div class="row">
@@ -376,10 +369,12 @@
       </div>
     </div>
   </footer>
-
-
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0" nonce="JSSUu14w"></script> 
   <script src="app.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js'></script><script  src="./script.js"></script>
   <!--<script src="Swal.js"></script>-->
 </body>
 
