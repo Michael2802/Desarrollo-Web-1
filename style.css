@@ -186,7 +186,7 @@ nav{
         padding: 9px 20px;
         border: 1px solid #fff;
         text-transform: uppercase;
-        transition: all .3s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .banner-contect a:hover{
@@ -195,28 +195,28 @@ nav{
     }
      @keyframes banner {
          0%{
-            background-image: url('img/banner1.jpg');  
+            background-image: url('img/banner5.png');  
          }
          25%{
-            background-image: url('img/banner1.jpg'),  
+            background-image: url('img/banner5.png'),  
          }
          26%{
-            background-image: url('img/banner3.jpg');  
+            background-image: url('img/banner6.jpg');  
          }
          50%{
-            background-image: url('img/banner3.jpg');  
+            background-image: url('img/banner6.jpg');  
          }
          51%{
-            background-image: url('img/banner2.jpg');  
+            background-image: url('img/banner7.jpeg');  
          }
          75%{
-            background-image: url('img/banner2.jpg');  
+            background-image: url('img/banner7.jpeg');  
          }
          76%{
-            background-image: url('img/banner4.jpg');  
+            background-image: url('img/banner3.jpg');  
          }
          100%{
-            background-image: url('img/banner4.jpg');  
+            background-image: url('img/banner3.jpg');  
          }
          
      }
