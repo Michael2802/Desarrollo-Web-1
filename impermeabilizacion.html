@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>Impermeabilización | Ornamentación | Obras | Pisos </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="shortcut icon" href="img/logo.png">
 <link rel="stylesheet" href="whatsapp.css">
 <style>
@@ -15,6 +15,30 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 </style>
 <body>
+   <!-------------------------------- Messenger plugin de chat Code --------------------------------->
+   <div id="fb-root"></div>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v10.0'
+       });
+     };
+ 
+     (function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+   </script>
+ 
+   <!-- Your plugin de chat code -->
+   <div class="fb-customerchat"
+     attribution="biz_inbox"
+     page_id="101802261595946">
+   </div>
   <!------------------------------------------whatsAPP--------------------------------------->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -22,21 +46,24 @@ body {font-size:16px;}
 <i class="fa fa-whatsapp my-float"></i>
 </a>
 
-<!-- Sidebar/menu -->
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:250px;font-weight:bold;"" id="mySidebar">
-    <a href="#"><img src="img/logo.png" alt="Akairos-sas-Impermeabilizaciones-y-Mantenimientos-Locativos" style="height: 100px; margin-top: 60px; margin-bottom: -60px;">
-    <h3 class="w3-padding-64 w3-center"><b>Akairos S.A.S<br></b></h3>
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">FACHADAS</a> 
-    <a href="#cubiertas" onclick="w3_close()" class="w3-bar-item w3-button">CUBIERTAS</a> 
-    <a href="#jardineras" onclick="w3_close()" class="w3-bar-item w3-button">JARDINERAS</a>
-    <a href="#ascensores" onclick="w3_close()" class="w3-bar-item w3-button">FOSOS DE ASENSOR</a>
-    <a href="#tanques" onclick="w3_close()" class="w3-bar-item w3-button">TANQUES DE AGUA</a>
-  </nav>
+<!----------------------------------------------- Sidebar/menu --------------------------------->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold; background-color: black;" id="mySidebar"><br>
+  
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>akairos s.a.s</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a> 
+    <a href="#obras" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Obras</a> 
+    <a href="#Impermeabilización" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Impermeabilización</a> 
+    <a href="#pisos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pisos Industriales</a> 
+    <a href="#Ornamentación" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ornamentación</a> 
+  </div>
+</nav>
   
   <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding">Bienvenido</span>
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16>
+    <span class="w3-left w3-padding" style="">AKAIROS</span>
     <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
   </header>
   
@@ -47,82 +74,6 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:320px;margin-right:40px">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="fachadas">
-    <h1 class=""><b>Impermeabilización</b></h1>
-    <h1 class="" style="color: cadetblue;"><b>Fachadas.</b></h1>
-    <hr style="width:50px;border:5px solid cadetblue" class="w3-round">
-  </div>
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="img/fotos web/foto fachadas/fachada1.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks"> 
-    </div>
-    <div class="w3-half">
-      <img src="img/fotos web/foto fachadas/fachada2.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-    </div>
-
-
-  <div class="w3-container" style="margin-top:80px" id="cubiertas">
-    <h1 class="" style="color: cadetblue;"><b>Cubiertas.</b></h1>
-    <hr style="width:50px;border:5px solid cadetblue" class="w3-round">
-  </div>
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="img/fotos web/cubiertas/MEMBRANA PVC CUBIERTAS.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="img/fotos web/cubiertas/MANTO ASFALTICO.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design"> 
-    </div>
-    <div class="w3-half">
-      <img src="img/fotos web/cubiertas/banner5.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-      <img src="img/fotos web/cubiertas/MANTENIMIENTO CUBIERTA EN TEJA ETERNIT.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-  </div>
-
-
-  <div class="w3-container" style="margin-top:80px" id="jardineras">
-    <h1 class="" style="color: cadetblue;"><b>jardineras.</b></h1>
-    <hr style="width:50px;border:5px solid cadetblue" class="w3-round">
-  </div>
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="img/fotos web/jardineras/jardinera.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks"> 
-    </div>
-    <div class="w3-half">
-      <img src="img/fotos web/jardineras/jardinera2.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-  </div>
-  
-  <div class="w3-container" style="margin-top:80px" id="ascensores">
-    <h1 class="" style="color: cadetblue;"><b>Fosos de Ascensor.</b></h1>
-    <hr style="width:50px;border:5px solid cadetblue" class="w3-round">
-  </div>
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="img/fotos web/fosos de ascensor/foso1.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks"> 
-    </div>
-    <div class="w3-half">
-      <img src="img/fotos web/fosos de ascensor/foso2.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-  </div>
-
-  <div class="w3-container" style="margin-top:80px" id="tanques">
-    <h1 class="" style="color: cadetblue;"><b>Tanques de Agua.</b></h1>
-    <hr style="width:50px;border:5px solid cadetblue" class="w3-round">
-  </div>
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="img/fotos web/tanques de agua/IMPERMEABILIZACION PISINA SISTEMA PVC.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks"> 
-    </div>
-    <div class="w3-half">
-      <img src="img/fotos web/tanques de agua/tanque2.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-  </div>
-
-
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -132,40 +83,158 @@ body {font-size:16px;}
     </div>
   </div>
 
-  <!-- Services -->
-  <div class="w3-container" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: cadetblue;"><b>Ornamentación.</b></h1>
-    <hr style="width:50px;border:5px solid cadetblue" class="w3-round">
+  <!----------------------------------------------------------- Servicios------------------------------------------------ -->
+  <div class="w3-container" id="obras" style="margin-top:30px">
+    <h1 class="" style="color: red"><b>Obras.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
     <div class="w3-row-padding">
         <div class="w3-half">
-          <img src="img/fotos web/ornamentacion/PORTON.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-          <img src="img/fotos web/ornamentacion/VENTANAS.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+          <img src="img/fotos web/obras/CAMBIO DE FLAUTAS.jpg" style="width:100%" onclick="onClick(this)" alt="CAMBIO DE FLAUTAS">
+          <img src="img/fotos web/obras/ESTRUCTURA PARA SUPERBOARD.jpg" style="width:100%" onclick="onClick(this)" alt="ESTRUCTURA PARA DRYWALL">
         </div>
         <div class="w3-half">
-          <img src="img/fotos web/ornamentacion/ESTRUCTURAS METALICAS.jpg" style="width:100%" onclick="onClick(this)" alt="El tiempo">
-          <img src="img/fotos web/ornamentacion/portones.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+          <img src="img/fotos web/obras/piso.png" style="width:100%" onclick="onClick(this)" alt="FUNCION DE PLACA">
+          <img src="img/fotos web/obras/ESTRUCTURA CUBIERTA.jpg" style="width:100%" onclick="onClick(this)" alt="ESTRUCTURA PARA CUBIERTA">
         </div>
       </div>
     </div>
 
 
-    <div class="w3-container" id="pisos" style="margin-top:75px">
-      <h1 class="w3-xxxlarge" style="color: cadetblue;"><b>Pisos Industriales.</b></h1>
-      <hr style="width:50px;border:5px solid cadetblue" class="w3-round">
-      <div class="w3-row-padding">
-          <div class="w3-half">
-            <img src="img/fotos web/poliurea/bodegas.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-            <img src="img/fotos web/poliurea/hospitales.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-          </div>
-          <div class="w3-half">
-            <img src="img/fotos web/poliurea/parqueadero.jpg" style="width:100%" onclick="onClick(this)" alt="El tiempo">
-            <img src="img/fotos web/poliurea/Talleres.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-          </div>
+  <div class="w3-container" id="Impermeabilización"style="margin-top:30px" id="fachadas">
+    <h1 class="" style="color: red"><b>Impermeabilización.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2 class=""><b>Fachadas.</b></h2>
+  </div>
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="img/fotos web/foto fachadas/fachada1.jpg" style="width:100%" onclick="onClick(this)" alt=""> 
+    </div>
+    <div class="w3-half">
+      <img src="img/fotos web/foto fachadas/fachada2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+
+
+  <div class="w3-container" style="margin-top:30px" id="cubiertas">
+    <h2 class=""><b>Cubiertas</b></h2>
+  </div>
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="img/fotos web/cubiertas/MEMBRANA PVC CUBIERTAS.jpg" style="width:100%" onclick="onClick(this)" alt="INSTALACIÓN MEMBRANA PVC">
+      <img src="img/fotos web/cubiertas/MANTO ASFALTICO.jpg" style="width:100%" onclick="onClick(this)" alt="INSTALCIÓN DE MANTO ASFALTICO"> 
+    </div>
+    <div class="w3-half">
+      <img src="img/fotos web/cubiertas/banner5.jpg" style="width:100%" onclick="onClick(this)" alt="APLICACIÓN POLIURIA PARA CUBIERTA">
+      <img src="img/fotos web/cubiertas/MANTENIMIENTO CUBIERTA EN TEJA ETERNIT.jpg" style="width:100%" onclick="onClick(this)" alt="MANTENIMIENTO CUBIERTA EN TEJA ETERNIT">
+    </div>
+  </div>
+
+
+  <div class="w3-container" style="margin-top:30px" id="jardineras">
+    <h2 class=""><b>Jardineras</b></h2> 
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="img/fotos web/jardineras/jardinera.jpg" style="width:100%" onclick="onClick(this)" alt=""> 
+    </div>
+    <div class="w3-half">
+      <img src="img/fotos web/jardineras/jardinera2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+  
+  <div class="w3-container" style="margin-top:30px" id="ascensores">
+    <h2 class=""><b>Fosos de Ascensor</b></h2> 
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="img/fotos web/fosos de ascensor/foso1.png" style="width:100%" onclick="onClick(this)" alt=""> 
+    </div>
+    <div class="w3-half">
+      <img src="img/fotos web/fosos de ascensor/foso2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+
+  <div class="w3-container" style="margin-top:30px" id="tanques">
+    <h2 class=""><b>Tanques de Agua</b></h2>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="img/fotos web/tanques de agua/IMPERMEABILIZACION PISINA SISTEMA PVC.jpg" style="width:100%" onclick="onClick(this)" alt="IMPERMEABILIZACIÓN PISINA MEMBRANA PVC"> 
+    </div>
+    <div class="w3-half">
+      <img src="img/fotos web/tanques de agua/tanque2.jpg" style="width:100%" onclick="onClick(this)" alt="MEMBRANA PVC PARA TANQUES DE AGUA">
+    </div>
+  </div>
+
+  <div class="w3-container" id="pisos" style="margin-top:30px">
+    <h1 class="" style="color: red"><b>Pisos Industriales.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="w3-row-padding">
+        <div class="w3-half">
+          <img src="img/fotos web/poliurea/bodegas.jpg" style="width:100%" onclick="onClick(this)" alt="BODEGAS">
+          <img src="img/fotos web/poliurea/hospitales.jpg" style="width:100%" onclick="onClick(this)" alt="HOSPITALES">
+        </div>
+        <div class="w3-half">
+          <img src="img/fotos web/poliurea/parqueadero.jpg" style="width:100%" onclick="onClick(this)" alt="PARQUEADEROS">
+          <img src="img/fotos web/poliurea/Talleres.jpg" style="width:100%" onclick="onClick(this)" alt="TALLER">
         </div>
       </div>
-  
-  <!-- Designers 
-  <div class="w3-container" id="designers" style="margin-top:75px">
+    </div>
+
+
+  <div class="w3-container" id="Ornamentación" style="margin-top:30px">
+    <h1 class="" style="color: red"><b>Ornamentación.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="w3-row-padding">
+        <div class="w3-half">
+          <img src="img/fotos web/ornamentacion/bicicletero.jpg" style="width:100%" onclick="onClick(this)" alt="BICICLETERO">
+          <img src="img/fotos web/ornamentacion/VENTANAS.jpg" style="width:100%" onclick="onClick(this)" alt="VENTANERIA">
+        </div>
+        <div class="w3-half">
+          <img src="img/fotos web/ornamentacion/ESTRUCTURAS METALICAS.jpg" style="width:100%" onclick="onClick(this)" alt="ESTRUCTURAS METALICAS">
+          <img src="img/fotos web/ornamentacion/portones.jpg" style="width:100%" onclick="onClick(this)" alt="PORTONES">
+        </div>
+      </div>
+    </div><br>
+
+
+    <section class="todo-contendio" id="contactenos">
+      <div class="contact-form">
+        <h3>Contáctenos <span></span></h3>
+        <form action="">
+          <p>
+            <input placeholder="nombre" type="text" name="nombre">
+          </p>
+          <p>
+            <input placeholder="Apellido" type="email" name="email">
+          </p>
+          <p>
+            <input placeholder="correo" type="text" name="correo">
+          </p>
+          <p>
+            <input placeholder="telefono" type="tel" name="telefono">
+          </p>
+          <p class="block">
+            <textarea style="resize: none;" placeholder="Mensaje" name="mensaje" rows="5"></textarea>
+          </p>
+          <p class="block">
+            <button type="submit" value="Enviar">
+              Enviar
+            </button>
+          </p>
+        </form>
+      </div>
+      <div class="fb-comments" data-href="https://www.facebook.com/Akairos-sas-Impermeabilizaciones-y-Mantenimientos-Locativos-101802261595946/" data-width="" data-numposts="5"></div>
+    </section>
+
+
+   
+
+
+      
+
+ <!-- <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>The best team in the world.</p>
@@ -175,8 +244,6 @@ body {font-size:16px;}
     </p>
     <p><b>Our designers are thoughtfully chosen</b>:</p>
   </div>
-
-  <!-- The Team 
   <div class="w3-row-padding w3-grayscale">
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
@@ -209,7 +276,6 @@ body {font-size:16px;}
       </div>
     </div>
   </div>
-<!-- End page content 
 </div>-->
 
 <!-- W3.CSS Container -->
