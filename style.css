@@ -17,11 +17,32 @@ body::-webkit-scrollbar-thumb{
     font-family: 'Poppins', sans-serif;  
 }
 body{
-    background: rgb(226, 226, 226);
+    background: white;
+}
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 3rem;
+    background: cadetblue;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.btn:hover{
+    transform: scale(1.1);
 }
 /*---------------------  Estilos Barra Color ---------------------*/
 .scrolling-active{
-    background-color: rgb(226, 226, 226);
+    background-color: white;
     box-shadow: 0 3px 1rem rgb(0,0,0,.1);
 }
 .scrolling-active .nav-links a{
@@ -97,7 +118,7 @@ nav{
     z-index: 1;
 }
 .logo a{
-    color: rgb(226, 226, 226);
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -121,18 +142,21 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: rgb(226, 226, 226);
+    color: white;
     letter-spacing: 3px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
 }
+
 .burger{
     display: none;
     cursor: pointer;
     
 }
-
+.nav-links a:hover{
+    color: cadetblue;
+}
 .burger div{
     width: 25px;
     height: 3px;
@@ -142,19 +166,123 @@ nav{
     
 }
 
-   
-/*----------------------------------Banner-----------------------------------------*/
-    .banner{
+ /*----------------------------------Video Banner-----------------------------------------*/  
+  .banner{
+      height: 100vh;
+      width: 100%;
+      
+  }
+ .banner video{
+     width: 100%;  
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     object-fit: cover;
+ }
+
+
+ /*----------------------------------Bienvenidos-----------------------------------------*/  
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/inicio_fondo.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -120px;
+
+}
+.inicio .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0%, 100%{
+        transform:translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+    
+}
+
+.inicio .content h3{
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.inicio .content h3 span{
+    color: cadetblue;
+    text-transform:uppercase;
+}
+
+.inicio .content p{
+    font-size: 1.2rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+
+
+     /*--------------------------------------- servicios ---------------------------------*/
+     .info_servicios{
+        text-align: center;
+        padding: 40px;
+        margin-bottom: -290px;
+        font-size: 25px;
+     }  
+     .contenedor p {
+        padding: 15px;
+        font-size: 15px;
+     
+     }  
+     .contenedor h3{
+        color: black;
+        font-size: 25px;
+       
+     }
+     .info a{
+        text-decoration: none;
+        color: cadetblue;
+        padding: 5px 20px;
+        border: 1px solid cadetblue;
+        text-transform: uppercase;
+        transition: all .5s ease-in-out;
+        font-size: 15px;
+    }
+
+    .info a:hover{
+        background-color: cadetblue;
+        color: #fff;
+    }
+     .contenedor{
+        display: grid;
+        grid-column-gap: 50px;
+        grid-template-columns: auto auto auto auto;
+       
+     }
+     .contenedor img{
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border-color: black;
+     }
+      /*---------------------------------Bruchure------------------------------------------------*/
+    .banner_brochure{
+        justify-items: center;
         width: 100%;
-        height: 98vh;
+        height: 60vh;
         background-size: cover;
         background-position: center;
         transition: all .0.5s ease-in-out;
         background-image: url('img/imagen1.jpg');
         animation: banner 20s infinite linear;
-        margin-bottom: 20px;
-        
-        
+        margin-bottom: 20px;   
     }
     .banner-contect{
         margin: 0;
@@ -163,30 +291,29 @@ nav{
         height: 100%;
         color:seashell;
         background-color: rgba(0, 22, 40, .6);
+        text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 40px;
     }
-    .banner-contect h1{
-        margin: 0;
-        padding: 0;
-        padding-bottom: 30px;
-        font-size: 40px;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
 
-    }
-    .banner-contect h2{
-        margin-bottom: 20px;
-    }
+    .banner-contect h1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        
+    }        
     .banner-contect a {
+        margin-left: 600px;
+        width: 200px;
+        align-items: center;
+        margin-top: 20px;
         text-decoration: none;
         color: seashell;
         padding: 9px 20px;
         border: 1px solid #fff;
         text-transform: uppercase;
         transition: all 0.5s ease-in-out;
+        
     }
 
     .banner-contect a:hover{
@@ -220,60 +347,84 @@ nav{
          }
          
      }
-   
-     /*--------------------------------------- servicios ---------------------------------*/
-     .info_servicios{
-        text-align: center;
-        padding: 40px;
-        margin-bottom: 50px;
-        font-size: 25px;
-     }  
-     .contenedor p {
-        padding: 15px;
-        font-size: 15px;
-        
-        
-     }  
-     .contenedor h3{
-        color: black;
-        font-size: 25px;
-       
-     }
-     .info a{
-        text-decoration: none;
-        color: red;
-        padding: 5px 20px;
-        border: 1px solid red;
-        text-transform: uppercase;
-        transition: all .5s ease-in-out;
-        font-size: 15px;
-    }
 
-    .info a:hover{
-        background-color: red;
-        color: #fff;
-    }
-     .contenedor{
-        display: grid;
-        grid-column-gap: 50px;
-        grid-template-columns: auto auto auto auto;
-       
+     /*---------------------------------Proyectos------------------------------------------------*/
+     .contenedor_proyectos{
+         margin-top: -250px;
+         margin-bottom: -250px;
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
      }
-     .contenedor img{
-        margin-top: 20px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border-color: black;
+     .contenedor_proyectos .figure{
+         margin: 10px;
+         position: relative;
+         height: 250px;
+         width: 350px;
+         overflow: hidden;
+         border-radius: 6px;
+         box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.50);
+         cursor: pointer;
      }
-      /*---------------------------------Nosotros------------------------------------------------*/
+     .contenedor_proyectos .figure img{
+         width: 100%;
+         height: 100%;
+         transition: all 500ms ease-out;
+     }
+     .contenedor_proyectos .figure .capas{
+         position: absolute;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(11, 103, 123, 0.6);
+         opacity: 0;
+         transition: all 500ms ease-out;
+         opacity: 0;
+         visibility: hidden;
+         text-align: center;
+     }
+     .contenedor_proyectos .figure:hover > .capas{
+         opacity: 1;
+         visibility: visible;
+
+     }
+     .contenedor_proyectos .figure:hover > .capas h3{
+         margin-top: 70px;
+         margin-bottom: 15px;
+
+     }
+     .contenedor_proyectos .figure:hover > img{
+         transform: scale(1.3);
+     }
+
+
+     .contenedor_proyectos .figure .capas h3{
+         color: #fff;
+         font-weight: 400;
+         margin-bottom: 120px;
+         transition: all 500ms ease-out;
+         margin-top: 30px;
+     }
+     .contenedor_proyectos .figure .capas p{
+         color: #fff;
+         font-size: 15px;
+         line-height: 1.5;
+         width: 100%;
+         max-width: 220px;
+         margin: auto;
+     }
+
       
- /*---------------------------------Proyectos------------------------------------------------*/
+ /*---------------------------------Proyectos------------------------------------------------
      
  .slideshow-container {
     width: 90%;
     position: relative;
     margin: auto;
+    
   }
   .slideshow-container h2{
       font-size: 30px;
@@ -286,7 +437,7 @@ nav{
       
   }
   
-  /* Next & previous buttons */
+  /* Next & previous buttons 
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -302,18 +453,18 @@ nav{
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  /* Position the "next button" to the right 
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /* On hover, add a black background color with a little bit see-through 
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* Caption text */
+  /* Caption text 
   .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -326,7 +477,7 @@ nav{
     opacity: 0.5;
   }
   
-  /* Number text (1/3 etc) */
+  /* Number text (1/3 etc) 
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -335,7 +486,7 @@ nav{
     top: 0;
   }
   
-  /* The dots/bullets/indicators */
+  /* The dots/bullets/indicators 
   .dot {
     cursor: pointer;
     height: 15px;
@@ -348,10 +499,10 @@ nav{
   }
   
   /*.active, .dot:hover {
-    background-color: #717171;*/
-  }
+    background-color: #717171;
+
   
-  /* Fading animation */
+  /* Fading animation 
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -367,7 +518,7 @@ nav{
   @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-  }
+  }*/
 /*---------------------------------proveedores------------------------------------------------*/
 @-webkit-keyframes scroll {
     0% {
@@ -393,10 +544,11 @@ nav{
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 90%;
+    z-index: -1;
   }
   .slider::before, .slider::after {
-    background: linear-gradient(to right, rgb(226, 226, 226) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(226, 226, 226, 0.726) 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px; 
     position: absolute;
@@ -422,141 +574,200 @@ nav{
     height: 100px;
     width: 300px;
   }
+  /*---------------------------------Contactenos-----------------------------------------------*/
 
+  .contactenos{
+      width: 100%;
+      padding: 20px;
+      margin: 0;
+      margin-top: 120px ;
+      height: 300px;
+      background-color: rgb(158, 188, 189);
+      color:#fff
+  }
+  .contenedor_contactenos{
+      margin-top: 30PX;
+      text-align: center;
+  }
+  .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 30px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
 
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-/*---------------------------------contactenos------------------------------------------------*/
-   .todo-contendio {
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+  /*---------------------------------Noticias-----------------------------------------------*/
+
+  .title{
+      text-align: center;
+      font-size: 40px;
+      margin-top: 100px;
+      font-weight: 100;
+      margin-bottom: 30px; 
+  }
+
+  .noticias{
+      width: 100%;
+      max-width: 1200px;
+      height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center; 
+      margin: auto;
+     
+  }
+  .noticias .card{
+      width: 330px;
+      height: 480px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 20px;
+      text-align: center;
+      transition: all 0.25s;
+  }
+
+  .noticias .card:hover{
+      transform: translatey(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .noticias .card img{
+      width: 330px;
+      height: 220px;
+  }
+
+  .noticias .card h4{
+      font-weight: 600;
+  }
+
+  .noticias .card p{
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300;
+  }
+
+  .noticias .card a{
+      font-weight: 500;
+      text-decoration: none;
+      color: #3498db;
+  }
+
+ /*---------------------------------footer-----------------------------------------------*/
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(/img/background-footer.svg);
+    background-size: cover;
+    /*background-color: cadetblue;
+    -webkit-mask-image:url(/img/background-footer.svg);
+    mask-image: url(/img/background-footer.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+
+}
+
+.container_footer{
     display: flex;
-    width: 100%;
-   }
-   .todo-contendio .contact-form{
-       width: 100%;
-   }
-   .contact-form{
-       margin-left: 50px;
-       margin-right: 50px;
-   }
-
-   .contact-form p{
-       margin:0;
-       padding: 1em;
-   }
-    .todo-contendio h3{
-        text-align: center;
-        font-size: 30px;
-        color: black;
-    }
-
-    .contact-form form input,
-    .contact-form form textarea,
-    .contact-form form button{
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: black;
-    border-bottom: 1px solid black;  
-}
-.contact-form form button{
-    background: rgb(65, 60, 60);
-    color: blanchedalmond;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-
-}
-.contact-form form button:hover,
-.contact-form form button:focus{
-    background:red;
-    color: white;
-    transition: background-color 1s ease-out;
-    outline: 0;
-    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
 }
 
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
 
+.box__footer .logo img{
+    width: 180px;
    
- /*---------------------------------footer------------------------------------------------*/
-     .contenido{
-        font-family: "Segoe UI";
-        display: flex;
-      
-        background-color: #2a2929;
-        padding: 20px;
-     }
-     .column--informacion{
-         width: 33%;
-     }
-     .column--info2{
-        margin-left: 200px;
-        width: 33%;
-        
-     }
-     .enlace{
-        color: blanchedalmond;
-
-     }
-     .column--contactos{
-        width: 33%;
-     }
-     .contenido p{
-         font-size: 15px;
-         color: white;
-        
-     }
-     .contenido h2{
-        padding-bottom: 15px;
-        color: red;
-        
-    }
-    .column--informacion .enlace{
-        color: #f2f2f2;
-    }
-    .enlace:hover{
-        color: red;
-        text-decoration: underline;
-        transition: 1s;
-    }
-    .contenido img{
-        float: right;
-    }
-     .row2{
-         display: flex;
-         margin: 20px;
-     }
-     .row2 img{
-         width: 30px;
-         height: 30px;
-         margin-right: 20px;
-     }
-
-     .redes{
-        display: flex;
-        margin: 15px;
-        justify-content: center;
-
-     }
-     .column--redes img{
-        width: 30px;
-        height: 30px;
-    }
-    .column--redes{
-        margin-left: 800px;
-        display: flex;
-    } 
-    .row{
-        margin: 5px;
-    }
-    .derechos{
-        margin-top: 10px;
-    }
 }
-     
-     
 
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color:#7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color:#343434;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color:#7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 25px;
+    
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
     
     @media screen and (max-width: 1024px){
         #roksearch_results{
@@ -568,31 +779,22 @@ nav{
             width: 60%;
         }
     }
-    
-
-    
     @media screen and (max-width:841px){
-      
 
-        /*--------------------- Header/nav ---------------------*/
-        html, body {
-           
-            background: rgb(226, 226, 226);
-            
-        }
+        /*--------------------- Header/nav ---------------------*/      
+        
         .logo h4{
             color: black;
         }
-
         nav{
-            background-color: rgba(226, 226, 226);
+            background-color: white
         }
         .nav-links{
             position: absolute;
             right: 0px;
             height: 92vh;
             top:8vh;
-            background-color: rgb(226, 226, 226);
+            background-color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -638,92 +840,64 @@ nav{
     }
     
       /*----------------------------------Banner-----------------------------------------*/
-    .banner{
-        height: 500px;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 25px;
+      .inicio{
+        flex-flow: column-reverse;
+        margin-bottom: 15;  
     }
-    .banner-contect h1{
-        font-size: 30px;
-        text-align: center;
 
+    .inicio .image img{
+        width: 100%;
     }
-    .banner-contect h2{
-        font-size: 15px;
-        margin-bottom: 20px;
 
+    .inicio .content h3{
+        font-size: 2.4rem;
+    }
+
+    .inicio .content p{
+        font-size: 1.2rem;
     }
      /*----------------------------------welcome-----------------------------------------*/
     
-     #list li figure > div > div {
-        width: 270px;
-        height: 270px;
-
-     }
+    
+     /*----------------------------------Servicios-----------------------------------------*/
+     .banner_brochure{
+         margin-top: 250px;
+         height: 480px;
+     } 
      
-            /*----------------------------------Servicios-----------------------------------------*/
-
-       .servicios .item1,
-       .servicios .item2,
-       .servicios .item3,
-       .servicios .item4,
-       .servicios .item5,
-       .servicios .item6,
-       .servicios .item7,
-       .servicios .item8{
-           grid-column: 1 / -1;
-           background-color: rgb(226, 226, 226);;
-       }
-       
-       /*----------------------------------Nosotros-----------------------------------------*/
+     .banner-contect{
+         align-items: center;
+     }
        .contenedor .info{
-        grid-column: 1 / -1;
-        padding: 0;
+           grid-column: 1 / -1;
+           
        }
-       /*----------------------------------Nosotros-----------------------------------------*/
-       .mySlides img{
-        height: 300px;
+       .banner-contect a {
+           margin-left: -10px;
        }
+       .contenedor_proyectos{
+           margin-top: 80px;
+           margin-bottom: 450px;
+       }
+        /*----------------------------------proyectos-----------------------------------------*/
+
+        .contenedor_proyectos{
+            margin-bottom: 550px;
+        }
      /*----------------------------------proveedores-----------------------------------------*/
 
         .slider{
             width: 100%;
         }
     /*----------------------------------Contactenos-----------------------------------------*/
-        
-    .todo-contendio {
-        width: 80%;
-        flex-direction: column; 
-    }
-    .contact-form{
-        width: 100%;
-    }
-    
-    
-    /*----------------------------------fotter-----------------------------------------*/
-   
-    .contenido{
-        flex-direction: column;
-        width: 100%;
-    }
-    .column--informacion{
-        width: 100%;
-    }
-    .column--info2{
-        width: 100%;
-        margin-left: 0px;
-    }
-    .column--contactos{
-        width: 100%;
-    }
-    .column--redes{
-        margin-left: 30px;
-       }  
+
+    footer{
+        margin-top: 1200px;
     }
 
+    }
 
-    
+}
     
         
         
