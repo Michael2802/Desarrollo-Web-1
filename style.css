@@ -102,6 +102,27 @@ section{
     from { transform: rotate(0deg); } 
     to { transform: rotate(360deg); }
 }
+/*---------------------  WhatsApp ---------------------*/
+.float{
+	position:fixed;
+	bottom:40px;
+	right:25px;
+	color:#25d366;
+	border-radius:50px;
+	text-align:center;
+    font-size:50px;
+    z-index:100;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.float:hover{
+    transform: scale(1.1);
+}
 
 
 @media screen and (max-width: 1920px){
@@ -693,13 +714,13 @@ nav{
 footer{
     width: 100%;
     padding: 50px 0px;
-    background-image: url(/img/background-footer.svg);
+    background-image: url(/img/background-footer.jpg);
     background-size: cover;
-    /*background-color: cadetblue;
-    -webkit-mask-image:url(/img/background-footer.svg);
-    mask-image: url(/img/background-footer.svg);
+    background-color: rgb(155, 35, 139);
+    -webkit-mask-image:url(/img/background-footer.jpg);
+    mask-image: url(/img/background-footer.jpg);
     -webkit-mask-size: cover;
-    mask-size: cover;*/
+    mask-size: cover;
 
 }
 

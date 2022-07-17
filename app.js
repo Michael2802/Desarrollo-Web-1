@@ -1,4 +1,5 @@
 //---------------------------------menu------------------------------------------------//
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -22,7 +23,8 @@ const navSlide = () => {
 
 }
 navSlide();
-//---------------------------------Cambio de Color Menu------------------------------------------------//
+//---------------------------------Cambio de Color Menu--------------------------------------------//
+
 window.addEventListener('scroll', function () {
     let nav = document.querySelector('nav');
     let windowPosition = window.scrollY > 0;
@@ -30,6 +32,7 @@ window.addEventListener('scroll', function () {
     nav.classList.toggle('scrolling-active', windowPosition);
   })
   //---------------------------------Animacion Divs------------------------------------------------//
+
   let animado = document.querySelectorAll(".animado");
 
 function mostrarScroll() {
@@ -45,7 +48,7 @@ function mostrarScroll() {
 
     }
 }
-//---------------------------------autocarga------------------------------------------------//
+//---------------------------------autocarga---------------------------------------------------------//
 window.onload = function(){
     var contenedor = document.getElementById('contenedor_carga');
     
@@ -81,8 +84,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
-
 
 
 var sliderTeam = (function(document, $) {
